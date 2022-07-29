@@ -15,12 +15,12 @@ pipeline {
 			
 					}
 				}
-		post {
-			always { 
-				script{
-				echo "Say goodbye!"
-				}
-				}
-			}
+		//post {
+			//always { 
+				//script{
+				//echo "Say goodbye!"
+				//}
+				//}
+			//}
 		}
 }
