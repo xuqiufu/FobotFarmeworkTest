@@ -19,15 +19,16 @@ pipeline {
 			always { 
 				script{
 					step(
-					[
-					%class%:               'RobotPublisher',
-					outputFilename:         output.xml,
-					repotFilename:         report.html,
-					logFilename:           log.html,
-					disableArchiveOutput:  false,
-					passThreshold:        100,
-					unstableThreshold:     80,
-					]
+							[
+                              $class              : 'RobotPublisher',
+                              outputPath          : '.',
+                              outputFileName      : 'output.xml',
+                              reportFileName      : 'report.html',
+                              logFileName         : 'log.html',
+                              disableArchiveOutput: false,
+                              passThreshold       : 100,
+                              unstableThreshold   : 80,
+                            ]
 					)
 					echo "Say goodbye!"
 					}
