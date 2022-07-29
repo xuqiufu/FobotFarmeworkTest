@@ -20,7 +20,7 @@ pipeline {
 				script{
 					step(
 					[
-					$class:               'RobotPublisher',
+					%class%:               'RobotPublisher',
 					outputFilename:         output.xml,
 					repotFilename:         report.html,
 					logFilename:           log.html,
