@@ -27,7 +27,7 @@ pipeline {
 					disableArchiveOutput:  false,
 					passThreshold:        100,
 					unstableThreshold:     80,
-					
+					]
 					)
 					echo "Say goodbye!"
 					}
