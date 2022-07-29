@@ -1,9 +1,6 @@
 pipeline {
 
-    agent any  
-	environment{
-		commnd="${params.build_commnd}"
-		}
+
     stages {  
         stage("build") {
             steps {
@@ -12,7 +9,7 @@ pipeline {
 				echo "Say goodbye!"
 				bat '''@echo off
 				
-				%{env.commnd}%
+				%build_commnd%
 				//pybot keyword_driven.robot
 				'''
 				//${build_commnd}
