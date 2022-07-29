@@ -1,6 +1,8 @@
 pipeline {
 
     agent any  
+	environment{
+		commnd="${params.build_commnd}"
     stages {  
         stage("build") {
             steps {
@@ -8,7 +10,7 @@ pipeline {
 				
 				script{
 				echo "Say goodbye!"
-				echo $build_commnd				}
+				echo ${env.commnd}
 				//${build_commnd}
 				
 			
