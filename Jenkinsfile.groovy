@@ -5,10 +5,10 @@ pipeline {
         stage("build") {
             steps {
                 // 步骤内构建脚本  
-				bat '''
-				${build_commnd}
+				
+				//${build_commnd}
 				echo ${build_commnd}
-				'''
+			
 					}
 				}
 		post {
@@ -16,7 +16,6 @@ pipeline {
 				script{
 				echo "Say goodbye!"
 				}
-
 				}
 			}
 		}
