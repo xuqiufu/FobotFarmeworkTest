@@ -11,6 +11,7 @@ pipeline {
     post {
         always {  
             echo "Say goodbye!"
-        }
-    }
+			}
+		}
+	}
 }
