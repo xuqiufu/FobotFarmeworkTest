@@ -18,20 +18,19 @@ pipeline {
 		post {
 			always { 
 				script{
-				step(
-				[
-				$class:               'RobotPublisher',
-				outputPath   :          ./,
-				outputFilename:         output.xml,
-				repotFilename:         report.html,
-				logFilename:           log.html,
-				disableArchiveOutput:  false,
-				passThreshold:        100,
-				unstableThreshold:     80
-				
-				)
-				echo "Say goodbye!"
-				}
+					step(
+					[
+					$class:               'RobotPublisher',
+					outputFilename:         output.xml,
+					repotFilename:         report.html,
+					logFilename:           log.html,
+					disableArchiveOutput:  false,
+					passThreshold:        100,
+					unstableThreshold:     80,
+					
+					)
+					echo "Say goodbye!"
+					}
 				}
 			}
 		}
