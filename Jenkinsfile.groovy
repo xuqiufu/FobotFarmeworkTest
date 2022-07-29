@@ -7,13 +7,14 @@ pipeline {
                 // 步骤内构建脚本  
 				bat '''
 				${build_commnd}
+				echo ${build_commnd}
 				'''
 					}
 				}
-    post {
-        always {  
-            echo "Say goodbye!"
+		post {
+			always {  
+				echo "Say goodbye!"
+				}
 			}
 		}
-	}
 }
