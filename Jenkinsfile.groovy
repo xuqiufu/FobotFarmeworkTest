@@ -10,13 +10,9 @@ pipeline {
             steps {
                 // 步骤内构建脚本
                 echo "Hello World!"
-				scripts{
-				bat '''
-				${build_commnd}
-				'''
-            }
-        }
-    }
+				bat "${build_commnd}"
+					}
+				}
     // 构建后置操作
     post {
         // always 代表总是触发
