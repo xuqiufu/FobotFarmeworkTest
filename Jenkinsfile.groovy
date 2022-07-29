@@ -6,8 +6,12 @@ pipeline {
             steps {
                 // 步骤内构建脚本  
 				
-				//${build_commnd}
+				script{
+				echo "Say goodbye!"
 				echo ${build_commnd}
+				}
+				//${build_commnd}
+				
 			
 					}
 				}
