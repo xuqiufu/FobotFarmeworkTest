@@ -7,13 +7,12 @@ pipeline {
             steps {
                 // 步骤内构建脚本  
 				
-				echo "Say goodbye!"
-				bat '''@echo off
-				
-				%build_commnd%
-				//pybot keyword_driven.robot
-				'''
-				//${build_commnd}
+				echo "start build testcase!"
+				bat '''
+				@echo off				
+				%build_commnd%				
+				'''	
+				echo "finish build testcase!"
 				}
 		post {
 			always { 
@@ -29,8 +28,8 @@ pipeline {
                               passThreshold       : 100,
                               unstableThreshold   : 80,
                             ]
-					)
-					echo "Say goodbye!"
+						)
+					echo "The report have update!"
 					}
 				}
 			}
