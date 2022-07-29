@@ -10,18 +10,18 @@ pipeline {
 				echo "Say goodbye!"
 				bat '''@echo off
 				
-				%build_commnd%
+				%cobuild_commndmmnd%
 				//pybot keyword_driven.robot
 				'''
 				//${build_commnd}
 				}
-		//post {
-			//always { 
-				//script{
-				//echo "Say goodbye!"
-				//}
-				//}
-			//}
+		post {
+			always { 
+				script{
+				echo "Say goodbye!"
+				}
+				}
+			}
 		}
 	}	
 }
