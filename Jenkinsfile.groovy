@@ -8,8 +8,7 @@ pipeline {
 				
 				script{
 				echo "Say goodbye!"
-				echo ${build_commnd}
-				}
+				echo $build_commnd				}
 				//${build_commnd}
 				
 			
