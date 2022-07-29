@@ -10,7 +10,7 @@ pipeline {
 				echo "Say goodbye!"
 				bat '''@echo off
 				
-				%cobuild_commndmmnd%
+				%build_commnd%
 				//pybot keyword_driven.robot
 				'''
 				//${build_commnd}
