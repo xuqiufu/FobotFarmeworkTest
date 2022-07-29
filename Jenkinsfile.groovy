@@ -12,7 +12,7 @@ pipeline {
 				echo "Say goodbye!"
 				bat '''@echo off
 				
-				%"${env.commnd}"%
+				%{env.commnd}%
 				//pybot keyword_driven.robot
 				'''
 				//${build_commnd}
