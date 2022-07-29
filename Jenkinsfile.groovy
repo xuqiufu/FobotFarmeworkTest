@@ -18,14 +18,7 @@ pipeline {
 		post {
 			always { 
 				script{
-				step(
-				[
-				outputPath   :  ./
-				outputFilename:  output.xml
-				repotFilename:   report.html
-				logFilename:   log.html
-				]
-				)
+
 				echo "Say goodbye!"
 				}
 				}
