@@ -3,6 +3,7 @@ pipeline {
     agent any  
 	environment{
 		commnd="${params.build_commnd}"
+		}
     stages {  
         stage("build") {
             steps {
