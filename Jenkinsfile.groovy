@@ -1,10 +1,13 @@
 pipeline {
+
     agent any  
     stages {  
-        stage("Hello") {
+        stage("build") {
             steps {
-                // 步骤内构建脚本               
+                // 步骤内构建脚本  
+				bat '''
 				${build_commnd}
+				'''
 					}
 				}
     post {
