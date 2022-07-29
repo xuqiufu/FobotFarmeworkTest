@@ -10,7 +10,9 @@ pipeline {
                 // 步骤内构建脚本  
 				
 				echo "Say goodbye!"
-				echo "${env.commnd}"
+				bat '''
+				${env.commnd}
+				'''
 				//${build_commnd}
 				}
 		//post {
