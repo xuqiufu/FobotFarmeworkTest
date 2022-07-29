@@ -11,7 +11,7 @@ pipeline {
 				
 				echo "Say goodbye!"
 				bat '''@echo off
-				env.commnd
+				robot keyword_driven.robot
 				'''
 				//${build_commnd}
 				}
