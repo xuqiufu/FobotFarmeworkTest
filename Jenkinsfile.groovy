@@ -11,7 +11,7 @@ pipeline {
 				
 				echo "Say goodbye!"
 				bat '''@echo off
-				"${env.commnd}"
+				env.commnd
 				'''
 				//${build_commnd}
 				}
