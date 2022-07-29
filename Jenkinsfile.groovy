@@ -10,6 +10,10 @@ pipeline {
             steps {
                 // 步骤内构建脚本
                 echo "Hello World!"
+				scripts{
+				bat '''
+				${build_commnd}
+				'''
             }
         }
     }
