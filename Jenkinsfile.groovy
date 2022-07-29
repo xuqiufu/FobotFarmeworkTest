@@ -4,7 +4,6 @@ pipeline {
         stage("Hello") {
             steps {
                 // 步骤内构建脚本               
-				echo "Hello World!"
 				${build_commnd}
 					}
 				}
