@@ -12,8 +12,11 @@ pipeline {
 					}
 				}
 		post {
-			always {  
+			always { 
+				script{
 				echo "Say goodbye!"
+				}
+
 				}
 			}
 		}
