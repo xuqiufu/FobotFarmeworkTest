@@ -8,9 +8,10 @@ pipeline {
             // 阶段一执行的步骤一
             // 可以有多个步骤
             steps {
-                // 步骤内构建脚本
-                echo "Hello World!"
-				bat "${build_commnd}"
+                // 步骤内构建脚本               
+				bat '''
+				echo "Hello World!"
+				${build_commnd}'''
 					}
 				}
     // 构建后置操作
