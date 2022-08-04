@@ -5,10 +5,12 @@ pipeline {
     stages {  
         stage("build") {
             steps {
-                // 步骤内构建脚本  
-				
-				echo "start build testcase!"
-				echo "finish build testcase!"
+		  script{
+		    sh"""
+		    ${build_commnd}
+		    """	  	    		  				
+		    echo " ${build_commnd}"
+		  }
 			}
 		}
 	}	
