@@ -9,25 +9,6 @@ pipeline {
 				
 				echo "start build testcase!"
 				echo "finish build testcase!"
-				}
-		post {
-			always { 
-				script{
-					step(
-							[
-                              $class              : 'RobotPublisher',
-                              outputPath          : 'test_ssh',
-                              outputFileName      : 'output.xml',
-                              reportFileName      : 'report.html',
-                              logFileName         : 'log.html',
-                              disableArchiveOutput: false,
-                              passThreshold       : 100,
-                              unstableThreshold   : 80,
-                            ]
-						)
-					echo "The report have update!"
-					}
-				}
 			}
 		}
 	}	
